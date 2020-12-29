@@ -74,7 +74,6 @@ int main() {
 
 		//YIQ to RGB
 		hsv = YIQ_to_RGB(srcimg);
-		//cvtColor(hsv, hsv, COLOR_RGB2BGR);
 		imshow("RGB", hsv);
 
 		//RGB to YCbCr
@@ -96,7 +95,6 @@ int main() {
 
 		//RGB to YIQ
 		hsv = RGB_to_YIQ(hsv);
-		cvtColor(hsv, hsv, COLOR_RGB2BGR);
 		imshow("YIQ", hsv);
 		waitKey(0);
 		break;
